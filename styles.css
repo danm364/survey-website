@@ -2,3 +2,48 @@ textarea {
     width: 600px;
     height: 200px;
 }
+body{
+    background-color: bisque;
+    border-color: darkgrey;
+}
+
+p {
+    font-style: italic;
+}
+
+.heading{
+    font-style: italic;
+}
+
+figcaption{
+    font-weight: 900;
+}
+
+fieldset {
+    display: block;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border: 2px groove (internal value);
+    border-style: dashed;
+    border-color: brown;
+    width: 100PX;
+    
+    
+}
+
+.color{
+    border: 2px solid brown;
+    width: 275px;
+    border-bottom-color: rgb(0, 0, 0);
+    padding-bottom: 15px;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-left: 15px;
+    border-left-color: red;
+    border-top-color: green;
+    border-right-color: blue;
+}
