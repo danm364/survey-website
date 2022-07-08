@@ -47,3 +47,19 @@ fieldset {
     border-top-color: green;
     border-right-color: blue;
 }
+
+.black{
+    color: black;
+}
+
+.blue{
+    color: blue;
+}
+
+.green{
+    color: green;
+}
+
+.red{
+    color: red;
+}
