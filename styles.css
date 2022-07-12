@@ -63,3 +63,14 @@ fieldset {
 .red{
     color: red;
 }
+h1{
+    display:flex;
+    list-style-type:none;
+    padding:0;
+    justify-content:flex-end;
+    
+    
+}
+#login{
+    text-align: right;
+}
