@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="loginstyles.css">
+</head>
+<body>
+    
+    <main id="main-holder-signup">
+        <p>Please enter a username and password</p>
+        <ul>
+            <li id="passwordreq">Password Requirements:</li>
+                <ul>
+                    <li>At least 10 characters (and up to 100 characters)</li>
+                    <li>5 or more unique characters</li>
+                    <li>At least 3 of the following: uppercase, lowercase, numeric, or special characters</li>
+                </ul>
+        </ul>
+        <div id="signup-error-msg-holder">
+            <p id="signup-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
+        </div>
+        <form id="signup-form">
+            <input type="text" name="username" id="username-field" class="signup-form-field" placeholder="Username"><br>
+            <input type="password" name="password" id="password-field" class="signup-form-field" placeholder="Password"><br>
+            <input type="password" name="password-confirm" id="password-confirm" class="signup-form-field" placeholder="Password"><br>
+            <button type="submit" value="sign-up" id="user-sign-up" >Sign Up</button>
+        </form>
+    </main>
+</body>
