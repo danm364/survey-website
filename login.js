@@ -4,10 +4,6 @@ const loginForm = document.getElementById("login-form");
 const loginButton = document.getElementById("login-form-submit");
 const loginErrorMsg = document.getElementById("login-error-msg");
 
-//signup details
-const signupButton = document.getElementById("user-sign-up");
-const signupForm = document.getElementById("signup-form");
-const signupErrorMsg = document.getElementById("signup-error-msg");
 
 loginButton.addEventListener("click", (e) => {
     e.preventDefault();
@@ -22,16 +18,25 @@ loginButton.addEventListener("click", (e) => {
     }
 })
 
-signupButton.addEventListener("click", (e) => {
-    e.preventDefault();
-    const username = signupForm.username.value;
-    const password = signupForm.password.value;
-    const password_confirm = signupForm.password_confirm.value;
+//signup details
+var signupUser = document.getElementById("user-sign-up")
+var signupPassword = document.getElementById("password-field")
+var passwordConfirm = document.getElementById("password-confirm-field")
+var signupButton = document.getElementById("user-sign-up")
 
-    if (username === "user" && password === password_confirm) {
-        alert("You have successfully signed up.");
-        location.reload();
-    } else {
-        loginErrorMsg.style.opacity = 1;
+
+document.addEventListener('DOMContentLoaded', () => {
+    function createParagraph() {
+      const para = document.createElement('p');
+      para.textContent = 'You clicked the button!';
+      document.body.appendChild(para);
     }
-})
+  
+    const buttons = document.querySelectorAll('button');
+  
+    for (const button of buttons) {
+      button.addEventListener('click', createParagraph);
+    }
+  });
+  
+
